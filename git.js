@@ -32,9 +32,9 @@ git checkout -- . / git checkout -- fileName
 git remote add TomWeb https://github.com/darkTom17/TomWeb.git
 // @查看别名
 git remote -v
-// @将本地代码推送到远端库（推送的最小的单位是分支）
-git push TomWeb BranchName
-// @从远端往下拉代码
-git pull origin BranchName
-// @本地往远端推代码
-git push origin BranchName
+// @【推送】将本地代码推送到远端库（推送的最小的单位是分支）推送到GitHub上时密码要用token
+git push TomWeb BranchName / git push origin BranchName 【origin 是默认的远程仓库名称，它通常指向你的项目在远程主机上的存储库】
+// @【拉取】从远端库拉取到本地库（推送的最小的单位是分支）推送到GitHub上时密码要用token
+git pull TomWeb BranchName / git pull origin BranchName 【origin 是默认的远程仓库名称，它通常指向你的项目在远程主机上的存储库】
+// @【克隆】从远端克隆下项目文件（无需登陆账号，因为是公共项目）会自动为你创建别名【origin】
+git clone httpsLink
