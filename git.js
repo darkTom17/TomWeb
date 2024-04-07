@@ -1,3 +1,4 @@
+// ~ GIT 操作命令
 // @设置git全局签名
 git config --global user.name XXX  # 设置全局用户名
 git config --global user.email XXX  # 设置全局邮箱地址
@@ -14,9 +15,12 @@ git rm --cached file
 // @暂存区文件提交本地库  形成历史版本
 git commit -m 'this is a message' file
 // @版本切换
-git reset --hard number
+git reset --hard VersionNumber
+// ~ 分支 操作命令
 // @查看当前所在分支
 git branch
+// @创建分支
+git branch BranchName
 // @切换分支
 git checkout targetlineName
 // @分支合并代码（去GIT平台上合并）
@@ -25,4 +29,3 @@ git checkout targetlineName
 git pull origin targetlineName
 // @本地往远端推代码
 git push origin targetlineName
-/
