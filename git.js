@@ -22,10 +22,12 @@ git branch
 // @创建分支
 git branch BranchName
 // @切换分支
-git checkout targetlineName
+git checkout BranchName
+// @分支代码合并【将BranchName的提交记录合并到当前分支上】
+git merge BranchName
 // @分支合并代码（去GIT平台上合并）
 // git merge sourcelineName -m "这是一段合并信息的描述"
 // @从远端往下拉代码
-git pull origin targetlineName
+git pull origin BranchName
 // @本地往远端推代码
-git push origin targetlineName
+git push origin BranchName
