@@ -38,3 +38,8 @@ git push TomWeb BranchName / git push origin BranchName 【origin 是默认的�
 git pull TomWeb BranchName / git pull origin BranchName 【origin 是默认的远程仓库名称，它通常指向你的项目在远程主机上的存储库】
 // @【克隆】从远端克隆下项目文件（无需登陆账号，因为是公共项目）会自动为你创建别名【origin】
 git clone httpsLink
+// !【使用SSH推送/拉取时需要本地生成SSH公钥，然后有项目管理员添加至GitHub上才可使用】
+// ~ 配置忽略文件
+// $【创建xxx.ignore文件以配置git忽略文件】
+// $ 原则上这个文件位置随意
+// $ 在.gitconfig文件引用该文件
