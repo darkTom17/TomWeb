@@ -13,6 +13,8 @@ git add . (全部) / git add file （添加特定文件）
 git rm --cached file
 // @暂存区文件提交本地库  形成历史版本
 git commit -m 'this is a message' file
+// @版本切换
+git reset --hard number
 // @查看当前所在分支
 git branch
 // @切换分支
@@ -23,4 +25,4 @@ git checkout targetlineName
 git pull origin targetlineName
 // @本地往远端推代码
 git push origin targetlineName
-// @
+/
