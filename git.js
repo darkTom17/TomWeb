@@ -21,7 +21,9 @@ git reset --hard VersionNumber
 git branch
 // @创建分支
 git branch BranchName
-// @切换分支
+// @删除本地分支
+git branch -d BranchName
+// @切换分支【如果远程有同名分支则会将远程分支copy到本地,并为其】
 git checkout BranchName
 // @分支代码合并【将BranchName的提交记录合并到当前分支上】
 git merge BranchName
@@ -34,6 +36,7 @@ git remote add TomWeb https://github.com/darkTom17/TomWeb.git
 git remote -v
 // @【推送】将本地代码推送到远端库（推送的最小的单位是分支）推送到GitHub上时密码要用token
 git push TomWeb BranchName / git push origin BranchName 【origin 是默认的远程仓库名称，它通常指向你的项目在远程主机上的存储库】
+git push origin loacalBranchName:remoteBranchName 【将本地的分支推送到远程非同名分支上】
 // @【拉取】从远端库拉取到本地库（推送的最小的单位是分支）推送到GitHub上时密码要用token
 git pull TomWeb BranchName / git pull origin BranchName 【origin 是默认的远程仓库名称，它通常指向你的项目在远程主机上的存储库】
 // @【克隆】从远端克隆下项目文件（无需登陆账号，因为是公共项目）会自动为你创建别名【origin】
