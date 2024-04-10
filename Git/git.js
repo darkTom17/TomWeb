@@ -30,6 +30,9 @@ git merge BranchName
 // @如果不小心删了想【从最新版本恢复文件】
 git checkout -- . / git checkout -- fileName
 // ~ 开始玩远程喽
+// @本地切换到远程新建的分支
+// #1) 使用 git checkout -b BranchName
+// #2) 使用 git pull先拉取全部分支到本地然后  git checkout BranchName
 // @由于地址过长，为其创建别名
 git remote add TomWeb https://github.com/darkTom17/TomWeb.git
 // @查看别名
