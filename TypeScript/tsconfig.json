@@ -1,9 +1,41 @@
 {
-    "include":[
-        "./src/**/*"
-    ],
-    "compilerOptions":{
-        "target":"es6"
+    "compilerOptions": {
+      "target": "es6", // 指定编译后的 JavaScript 版本为 ES6
+      "module": "commonjs", // 指定模块解析方式为 CommonJS
+      "strict": true, // 开启严格模式，提供更严格的类型检查
+      "esModuleInterop": true, // 启用 ECMAScript 模块与 CommonJS 模块的互操作性
+      "forceConsistentCasingInFileNames": true, // 强制文件名大小写一致
+      "strictNullChecks": true, // 开启严格的空值检查
+      "noImplicitAny": true, // 禁止隐式的 any 类型
+      "outDir": "./dist", // 指定编译后的输出目录为 dist 文件夹
+      "rootDir": "./src", // 指定 TypeScript 文件的根目录为 src 文件夹
+      "declaration": true, // 生成对应的声明文件（.d.ts）
+      "declarationMap": true, // 生成声明文件的映射文件
+      "sourceMap": true // 生成 source map 文件，方便调试
     },
-    "outDir":"./JSDir"
+    "include": [
+      "src/**/*.ts" // 指定需要编译的文件匹配模式为 src 文件夹下的所有 TypeScript 文件
+    ],
+    "exclude": [
+      "node_modules" // 排除 node_modules 文件夹下的所有文件
+    ]
 }
+  
+// @ compilerOptions：编译器选项，用于配置 TypeScript 编译器的行为。
+// # target：指定编译后的 JavaScript 版本为 ES6。
+// # module：指定模块解析方式为 CommonJS。
+// # strict：开启严格模式，提供更严格的类型检查。
+// # esModuleInterop：启用 ECMAScript 模块与 CommonJS 模块的互操作性。
+// # forceConsistentCasingInFileNames：强制文件名大小写一致。
+// # strictNullChecks：开启严格的空值检查。
+// # noImplicitAny：禁止隐式的 any 类型。
+// # outDir：指定编译后的输出目录为 dist 文件夹。
+// # rootDir：指定 TypeScript 文件的根目录为 src 文件夹。
+// # declaration：生成对应的声明文件（.d.ts）。
+// # declarationMap：生成声明文件的映射文件。
+// # sourceMap：生成 source map 文件，方便调试。
+// # include：指定需要编译的文件匹配模式为 src 文件夹下的所有 TypeScript 文件。
+// # exclude：排除 node_modules 文件夹下的所有文件。
+
+
+
