@@ -44,6 +44,22 @@ git push origin loacalBranchName:remoteBranchName 【将本地的分支推送到
 git pull TomWeb BranchName / git pull origin BranchName 【origin 是默认的远程仓库名称，它通常指向你的项目在远程主机上的存储库】
 // @【克隆】从远端克隆下项目文件（无需登陆账号，因为是公共项目）会自动为你创建别名【origin】
 git clone httpsLink
+// @【本地切换远端分支】
+git fetch
+git checkout BranchName
+// # git fetch 和 git pull有区别吗
+git fetch 和 git pull 都是用于从远程仓库获取更新的命令，但它们之间有一些重要的区别：
+
+git fetch 命令会从远程仓库获取最新的提交历史和文件，并将这些信息下载到本地，但不会自动合并到当前分支。
+它只是将远程分支的更新内容下载到本地，但不会影响你的工作目录或当前工作分支。
+通常情况下，git fetch 可以在你开始工作之前用来获取远程仓库的最新信息，并查看其他人的更新。
+git pull：
+
+git pull 命令实际上是 git fetch 和 git merge 命令的组合。
+它会从远程仓库获取最新的提交历史和文件，并自动将这些更新合并到当前分支。
+相当于执行了 git fetch 后，再执行了 git merge 来将远程分支的更新合并到当前分支。
+因此，主要的区别在于 git pull 会自动将远程分支的更新内容合并到当前分支，而 git fetch 则只是将更新的内容下载到本地，需要手动执行合并操作。
+
 // !【使用SSH推送/拉取时需要本地生成SSH公钥，然后有项目管理员添加至GitHub上才可使用】
 // ~ 配置忽略文件
 // $【创建xxx.ignore文件以配置git忽略文件】
