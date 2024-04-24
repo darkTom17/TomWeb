@@ -2,16 +2,14 @@
     <div class="app">
         <h1>Vue3</h1>
         <Person />
+        <Test />
     </div>
   
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import Person from "./components/Person.vue"
-export default {
-    name: 'App',
-    components:{Person}
-}
+import Test from "./components/Test.vue"
 </script>
 
 <style scoped>

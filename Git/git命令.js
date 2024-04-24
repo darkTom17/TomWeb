@@ -42,6 +42,8 @@ git push TomWeb BranchName / git push origin BranchName 【origin 是默认的�
 git push origin loacalBranchName:remoteBranchName 【将本地的分支推送到远程非同名分支上】
 // @【拉取】从远端库拉取到本地库（推送的最小的单位是分支）推送到GitHub上时密码要用token
 git pull TomWeb BranchName / git pull origin BranchName 【origin 是默认的远程仓库名称，它通常指向你的项目在远程主机上的存储库】
+// $ pull 有三种模式 --rebase  --no-rebase  --ff-only
+// ^ 建议 git pull origin BranchName --no-rebase
 // @【克隆】从远端克隆下项目文件（无需登陆账号，因为是公共项目）会自动为你创建别名【origin】
 git clone httpsLink
 // @【本地切换远端分支】

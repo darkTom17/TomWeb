@@ -24,6 +24,26 @@ class Person {
 const person1 = new Person('Alice', 30);
 const person2 = new Person('Bob', 25);
 
+4 构造函数
+
+// 定义一个构造函数
+function Person(name, age) {
+    this.name = name; // 对象的名称属性
+    this.age = age; // 对象的年龄属性
+    
+    // 定义对象的方法
+    this.greet = function() {
+        console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
+    };
+}
+
+// 使用构造函数创建对象实例
+var person1 = new Person('Alice', 30);
+var person2 = new Person('Bob', 25);
+
+// 调用对象的方法
+person1.greet(); // 输出：Hello, my name is Alice and I'm 30 years old.
+person2.greet(); // 输出：Hello, my name is Bob and I'm 25 years old.
 
 // @ 基本类型限制：你可以使用基本的 JavaScript 数据类型，例如 number、string、boolean、null、undefined 等。例如：
 let age: number = 30;
